@@ -27,17 +27,18 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </mapView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t83-DH-fOd">
-                                <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="0.0" y="666" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" id="1a6-Og-BTw"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="O8E-MV-QNr"/>
+                                    <constraint firstAttribute="height" constant="1" id="Vf2-aj-TJW"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4FB-WS-7vO">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Double Tap to Choose Loation" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zrC-gg-0OH">
-                                        <rect key="frame" x="42" y="22" width="290.5" height="27.5"/>
+                                        <rect key="frame" x="42" y="21" width="291" height="28"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -51,37 +52,36 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O8m-Vc-7D7">
-                                <rect key="frame" x="288" y="580" width="67" height="67"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="67" id="ZTH-sq-t6C"/>
-                                    <constraint firstAttribute="height" constant="67" id="fUJ-xo-af2"/>
-                                </constraints>
+                                <rect key="frame" x="292" y="580" width="67" height="67"/>
                                 <state key="normal" image="locationButton"/>
                                 <connections>
                                     <action selector="userLocationCenterBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nWQ-u4-3pX"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.11667413766385037" green="1" blue="0.15369477367422579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="t83-DH-fOd" firstAttribute="top" secondItem="O8m-Vc-7D7" secondAttribute="bottom" constant="20" id="80n-0s-bJI"/>
+                            <constraint firstItem="t83-DH-fOd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="68t-xT-rMW"/>
+                            <constraint firstItem="cox-Ik-s4a" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7vN-91-wIX"/>
                             <constraint firstItem="4FB-WS-7vO" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ATM-33-Jif"/>
+                            <constraint firstItem="t83-DH-fOd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="FDF-dg-uSW"/>
                             <constraint firstItem="4FB-WS-7vO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="GWX-a7-Awj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t83-DH-fOd" secondAttribute="trailing" id="QMx-cI-xnH"/>
-                            <constraint firstItem="t83-DH-fOd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="X4X-4y-Obl"/>
-                            <constraint firstItem="t83-DH-fOd" firstAttribute="top" secondItem="cox-Ik-s4a" secondAttribute="bottom" id="Ycb-2M-AfC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O8m-Vc-7D7" secondAttribute="trailing" constant="20" id="dMp-Dc-QaR"/>
-                            <constraint firstItem="cox-Ik-s4a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dqi-P8-NdY"/>
-                            <constraint firstItem="cox-Ik-s4a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="eiz-dc-Gdk"/>
-                            <constraint firstItem="t83-DH-fOd" firstAttribute="top" secondItem="cox-Ik-s4a" secondAttribute="bottom" id="giG-ZN-ull"/>
-                            <constraint firstItem="t83-DH-fOd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="kgf-dg-1Wz"/>
+                            <constraint firstItem="cox-Ik-s4a" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="H3c-Gs-AQt"/>
+                            <constraint firstItem="t83-DH-fOd" firstAttribute="top" secondItem="O8m-Vc-7D7" secondAttribute="bottom" constant="19" id="Jwp-af-fiR"/>
+                            <constraint firstAttribute="trailing" secondItem="t83-DH-fOd" secondAttribute="trailing" id="M3H-we-WgS"/>
+                            <constraint firstItem="cox-Ik-s4a" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="aqd-KY-Z0g"/>
+                            <constraint firstAttribute="bottom" secondItem="t83-DH-fOd" secondAttribute="bottom" id="gat-TU-0bL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="O8m-Vc-7D7" secondAttribute="trailing" constant="16" id="mwo-Cy-0kL"/>
                             <constraint firstItem="4FB-WS-7vO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vXT-dp-wLj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cox-Ik-s4a" secondAttribute="trailing" id="yPc-7R-tFY"/>
+                            <constraint firstItem="cox-Ik-s4a" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wre-Vo-bx5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="BtnConstraint" destination="Jwp-af-fiR" id="2Uy-Yd-9ZA"/>
                         <outlet property="mapView" destination="cox-Ik-s4a" id="W18-pG-hWT"/>
+                        <outlet property="pullUIView" destination="t83-DH-fOd" id="jC2-Ss-72D"/>
+                        <outlet property="pullUpViewHighConstraint" destination="Vf2-aj-TJW" id="bTI-aq-dY7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
