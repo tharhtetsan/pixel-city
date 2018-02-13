@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		34035334B1CA817334E88280 /* Pods_pixel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B66112D7EB7917D290A087C /* Pods_pixel.framework */; };
 		BB1A2F9C202B6541005C2E7E /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A2F9B202B6541005C2E7E /* PhotoCell.swift */; };
+		BB1A2F9F202B6AE8005C2E7E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1A2F9E202B6AE8005C2E7E /* Constant.swift */; };
 		BBAEA74A20293517005F4DF8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAEA74920293517005F4DF8 /* AppDelegate.swift */; };
 		BBAEA74C20293517005F4DF8 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAEA74B20293517005F4DF8 /* MapVC.swift */; };
 		BBAEA74F20293517005F4DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAEA74D20293517005F4DF8 /* Main.storyboard */; };
 		BBAEA75120293517005F4DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAEA75020293517005F4DF8 /* Assets.xcassets */; };
 		BBAEA75420293517005F4DF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBAEA75220293517005F4DF8 /* LaunchScreen.storyboard */; };
+		BBE93669202D240F007ADF0B /* PopUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE93668202D240F007ADF0B /* PopUpVC.swift */; };
 		BBEAE11D202A0B9100704744 /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBEAE11C202A0B9100704744 /* DroppablePin.swift */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +24,7 @@
 		4B66112D7EB7917D290A087C /* Pods_pixel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BFB153B639E5F2BA6A4064D /* Pods-pixel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixel/Pods-pixel.debug.xcconfig"; sourceTree = "<group>"; };
 		BB1A2F9B202B6541005C2E7E /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		BB1A2F9E202B6AE8005C2E7E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		BBAEA74620293517005F4DF8 /* pixel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pixel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAEA74920293517005F4DF8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBAEA74B20293517005F4DF8 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		BBAEA75020293517005F4DF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBAEA75320293517005F4DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BBAEA75520293517005F4DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE93668202D240F007ADF0B /* PopUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpVC.swift; sourceTree = "<group>"; };
 		BBEAE11C202A0B9100704744 /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -61,6 +65,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		BB1A2F9D202B6AD9005C2E7E /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BB1A2F9E202B6AE8005C2E7E /* Constant.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		BBAEA73D20293517005F4DF8 = {
 			isa = PBXGroup;
 			children = (
@@ -82,6 +94,7 @@
 		BBAEA74820293517005F4DF8 /* pixel */ = {
 			isa = PBXGroup;
 			children = (
+				BB1A2F9D202B6AD9005C2E7E /* Utilities */,
 				BBAEA75D202937D8005F4DF8 /* controller */,
 				BBAEA75C202937C9005F4DF8 /* view */,
 				BBAEA75B202937C1005F4DF8 /* model */,
@@ -106,6 +119,7 @@
 			children = (
 				BBEAE11C202A0B9100704744 /* DroppablePin.swift */,
 				BB1A2F9B202B6541005C2E7E /* PhotoCell.swift */,
+				BBE93668202D240F007ADF0B /* PopUpVC.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -243,6 +257,8 @@
 			files = (
 				BB1A2F9C202B6541005C2E7E /* PhotoCell.swift in Sources */,
 				BBAEA74C20293517005F4DF8 /* MapVC.swift in Sources */,
+				BB1A2F9F202B6AE8005C2E7E /* Constant.swift in Sources */,
+				BBE93669202D240F007ADF0B /* PopUpVC.swift in Sources */,
 				BBEAE11D202A0B9100704744 /* DroppablePin.swift in Sources */,
 				BBAEA74A20293517005F4DF8 /* AppDelegate.swift in Sources */,
 			);

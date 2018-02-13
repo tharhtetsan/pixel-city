@@ -45,5 +45,10 @@
 	<string>This app require your location to pull down images</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>This app require your location to pull down images</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
 </dict>
 </plist>
